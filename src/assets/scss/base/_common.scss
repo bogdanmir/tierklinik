@@ -92,7 +92,6 @@ ul {
   font-size: 24px;
   margin-bottom: 15px;
   &.color-green {
-    // color: $medicinal-green;
     color: #40ccb5;
   }
 }
@@ -110,17 +109,17 @@ ul {
   justify-content: center;
   align-items: center;
   background-color: #fff;
-  color: #4b4b4b;
+  color: #4b4b4b !important;
   border-radius: 2rem;
   font-size: 16px;
   padding: 16px 50px;
   max-width: max-content;
   &:hover {
-    color: #fff;
+    color: #fff !important;
     background-color: #37617a;
   }
   &.bg-red {
-    color: #fff;
+    color: #fff !important;
     background-color: #ff6573;
   }
 }
