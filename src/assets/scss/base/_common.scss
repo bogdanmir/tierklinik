@@ -122,6 +122,14 @@ ul {
     color: #fff !important;
     background-color: #ff6573;
   }
+  &.bg-green {
+    color: #fff !important;
+    background-color: #40ccb5;
+  }
+  &.full-btn {
+    max-width: 100%;
+    border-radius: 0;
+  }
 }
 .close-btn {
   width: 30px;
@@ -203,4 +211,48 @@ ul {
 .container {
   padding-left: 15px;
   padding-right: 15px;
+}
+
+.arrow {
+  position: relative;
+  width: 25px;
+  height: 40px;
+  &.arrow-left {
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      background-color: #fff;
+      width: 2px;
+      height: 50%;
+      left: 12px;
+    }
+    &::before {
+      top: 3px;
+      transform: rotate(45deg);
+    }
+    &::after {
+      bottom: 3px;
+      transform: rotate(-45deg);
+    }
+  }
+  &.arrow-right {
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      background-color: #fff;
+      width: 2px;
+      height: 50%;
+      left: 12px;
+    }
+    &::before {
+      top: 3px;
+      transform: rotate(-45deg);
+    }
+    &::after {
+      bottom: 3px;
+      transform: rotate(45deg);
+    }
+  }
 }

@@ -113,3 +113,43 @@
     }
   }
 }
+
+.veterinar-page {
+  .title-page {
+    margin-bottom: 50px;
+  }
+  .section-hero {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    .hero-wrap {
+      padding: 200px 0 200px;
+      background-size: 100% 50%;
+      background-repeat: no-repeat;
+    }
+    .hero-content {
+      max-width: 450px;
+    }
+    .hero-img {
+      margin-top: 66px;
+      img {
+        position: relative;
+        max-width: 380px;
+        right: auto;
+        left: auto;
+        top: auto;
+        bottom: auto;
+      }
+    }
+  }
+  .section-subtitle {
+    font-size: 16px;
+    margin-bottom: 75px;
+  }
+  .section-title {
+    color: #4b4b4b;
+  }
+  .description-txt {
+    color: #4b4b4b;
+    font-size: 20px;
+  }
+}
