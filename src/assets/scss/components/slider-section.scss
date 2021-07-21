@@ -3,6 +3,7 @@
     position: relative;
     width: 150px;
     height: 60px;
+    outline: none;
     &::before,
     &::after {
       content: "";

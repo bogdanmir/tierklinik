@@ -1,6 +1,9 @@
 .aarau-west-section {
-  padding: 102px 0 118px;
+  padding: 88px 0 107px;
   background: linear-gradient(45deg, #3fc7b1, #36637a);
+  @media (min-width: 1024px) {
+    padding: 102px 0 118px;
+  }
   .section-title {
     color: #fff;
     max-width: 580px;

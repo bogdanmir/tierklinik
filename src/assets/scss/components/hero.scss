@@ -116,27 +116,47 @@
 
 .veterinar-page {
   .title-page {
-    margin-bottom: 57px;
+    font-size: 56px;
+    margin-bottom: 78px;
+    @media (min-width: 1024px) {
+      font-size: 68px;
+      margin-bottom: 57px;
+    }
   }
   .section-hero {
     padding-bottom: 0;
     margin-bottom: 0;
     .hero-wrap {
-      padding: 237px 0 200px;
-      background-size: 100% 34%;
+      padding: 237px 0 267px;
+      background-size: 100% 32%;
       background-repeat: no-repeat;
+      @media (min-width: 1024px) {
+        padding: 237px 0 200px;
+        background-size: 100% 34%;
+      }
     }
     .hero-content {
       max-width: 525px;
       .subtitle-page {
         font-size: 21px;
         margin-bottom: 18px;
+        @media (max-width: 1023px) {
+          margin-bottom: 25px;
+        }
       }
     }
     .hero-img {
-      margin-top: 66px;
-      max-height: 490px;
-      position: relative;
+      @media (min-width: 768px) {
+        max-height: 382px;
+        position: absolute;
+        right: 0;
+        top: 57px;
+      }
+      @media (min-width: 1024px) {
+        position: relative;
+        max-height: 490px;
+        margin-top: 66px;
+      }
       img {
         position: relative;
         max-width: 380px;
@@ -146,6 +166,14 @@
         left: auto;
         top: auto;
         bottom: auto;
+        @media (min-width: 768px) {
+          max-width: 290px;
+          max-height: 382px;
+        }
+        @media (min-width: 1024px) {
+          max-width: 380px;
+          max-height: 490px;
+        }
       }
       .download-btn {
         position: absolute;
@@ -168,11 +196,19 @@
   }
   .section-subtitle {
     font-size: 21px;
-    margin-bottom: 75px;
+    margin-bottom: 83px;
+    @media (min-width: 1024px) {
+      margin-bottom: 75px;
+    }
   }
   .section-title {
     color: #4b4b4b;
-    margin-bottom: 30px;
+    font-size: 38px;
+    margin-bottom: 40px;
+    @media (min-width: 1024px) {
+      font-size: 30px;
+      margin-bottom: 30px;
+    }
   }
   .description-txt {
     color: #4b4b4b;
