@@ -62,7 +62,7 @@ $(document).ready(function () {
   function slickVeterinarianSlider() {
     if (window.matchMedia("(min-width: 681px)").matches) {
       if (!$slickResizeSlider) {
-        $(".veterinarians-carousel").slick({
+        $(".veterinarians.carousel").slick({
           slidesToShow: 3,
           slidesToScroll: 1,
           infinite: true,
@@ -84,7 +84,7 @@ $(document).ready(function () {
       }
     } else {
       if ($slickResizeSlider) {
-        $(".veterinarians-carousel").slick("unslick");
+        $(".veterinarians.carousel").slick("unslick");
         $slickResizeSlider = false;
       }
     }

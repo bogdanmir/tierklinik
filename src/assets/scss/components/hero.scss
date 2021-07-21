@@ -116,40 +116,73 @@
 
 .veterinar-page {
   .title-page {
-    margin-bottom: 50px;
+    margin-bottom: 57px;
   }
   .section-hero {
     padding-bottom: 0;
     margin-bottom: 0;
     .hero-wrap {
-      padding: 200px 0 200px;
-      background-size: 100% 50%;
+      padding: 237px 0 200px;
+      background-size: 100% 34%;
       background-repeat: no-repeat;
     }
     .hero-content {
-      max-width: 450px;
+      max-width: 525px;
+      .subtitle-page {
+        font-size: 21px;
+        margin-bottom: 18px;
+      }
     }
     .hero-img {
       margin-top: 66px;
+      max-height: 490px;
+      position: relative;
       img {
         position: relative;
         max-width: 380px;
+        max-height: 490px;
+        object-fit: cover;
         right: auto;
         left: auto;
         top: auto;
         bottom: auto;
       }
+      .download-btn {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        z-index: 2;
+        border-radius: 20px 0 0 0;
+        padding: 13px 5px;
+        width: 100%;
+        max-width: 260px;
+        font-size: 21px;
+        .btn-ico {
+          max-width: 20px;
+          margin-right: 25px;
+          position: absolute;
+          left: 20px;
+        }
+      }
     }
   }
   .section-subtitle {
-    font-size: 16px;
+    font-size: 21px;
     margin-bottom: 75px;
   }
   .section-title {
     color: #4b4b4b;
+    margin-bottom: 30px;
   }
   .description-txt {
     color: #4b4b4b;
-    font-size: 20px;
+    font-size: 24px;
+    line-height: 1.35;
+  }
+}
+
+.gallery-page {
+  .hero-wrap {
+    background-image: url(../images/hero-bg-scale.jpg);
   }
 }

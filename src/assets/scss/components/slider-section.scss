@@ -1,4 +1,4 @@
-.slider-section {
+.veterinarians-section {
   .slick-arrow {
     position: relative;
     width: 150px;
@@ -39,9 +39,9 @@
   .slider-item {
     max-width: 250px;
     transition: all 0.3s;
+    margin-bottom: 50px;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
-    margin-bottom: 50px;
     &:hover {
       transform: scale(1.05);
     }
@@ -52,6 +52,9 @@
     }
   }
   .slider-description {
+    background-color: #fff;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
     text-align: left;
     color: #a0a0a0;
     height: 125px;
@@ -62,9 +65,18 @@
       margin-bottom: 5px;
     }
   }
-  .veterinarians-carousel {
+  .veterinarians {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     @media (max-width: 680px) {
       flex-direction: column;
+    }
+    &.gallery {
+      flex-wrap: wrap;
+      .slider-item {
+        max-width: 320px;
+      }
     }
   }
 }

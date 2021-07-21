@@ -1,0 +1,63 @@
+.news-section {
+  padding: 190px 0;
+  .section-title {
+    margin: 0;
+    line-height: 1.2;
+  }
+  .title-wrap {
+    max-width: 325px;
+    width: 100%;
+    padding-right: 50px;
+  }
+  .item-wrap {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+.news-wrap {
+  display: flex;
+}
+.news-item {
+  display: flex;
+  align-items: center;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.12);
+  background-color: #fff;
+  border-radius: 15px;
+  margin: 0 0 35px;
+  .news-img {
+    width: 100%;
+    max-width: 127px;
+    max-height: 88px;
+    border-radius: 15px;
+    object-fit: cover;
+  }
+  .news-description {
+    padding: 0 31px;
+    line-height: 1.9;
+  }
+  .news-title {
+    font-size: 22px;
+    font-family: "Replica-Bold";
+  }
+  .news-subtitle {
+    font-size: 16px;
+  }
+  .arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #40ccb5;
+    color: #fff;
+    margin: 0 0 0 auto;
+    width: 100%;
+    max-width: 85px;
+    height: 88px;
+    svg {
+      width: 100%;
+      height: 100%;
+      max-width: 40px;
+      max-height: 35px;
+      fill: #fff;
+    }
+  }
+}
