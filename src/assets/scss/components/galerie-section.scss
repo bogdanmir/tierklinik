@@ -8,21 +8,25 @@
     margin-bottom: 10px;
   }
   .galerie-wrap {
-    margin-bottom: 132px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -20px 132px;
     .galerie-img {
       display: none;
+      padding: 0 20px 60px;
       &:nth-child(-n + 4) {
-        display: block;
+        display: flex;
       }
 
       @media (min-width: 768px) {
         display: none;
         &:nth-child(-n + 6) {
-          display: block;
+          display: flex;
         }
       }
       @media (min-width: 1024px) {
-        display: block;
+        display: flex;
+        flex: 0 0 25%;
       }
     }
   }
