@@ -79,9 +79,13 @@ ul {
 .section-title {
   font-size: 30px;
   line-height: 1;
-  color: $tkaw-blue;
+  // color: $tkaw-blue;
   margin-bottom: 50px;
   font-family: "Replica-Bold";
+  color: #37617a;
+  @media (min-width: 768px) {
+    color: #4b4b4b;
+  }
   @media (min-width: 1024px) {
     font-size: 38px;
     line-height: 1.5;

@@ -7,20 +7,32 @@
   // background-repeat: no-repeat;
   // background-size: cover;
   overflow: hidden;
-  @media (min-width: 1024px) {
-    padding-bottom: 200px;
-    margin-bottom: -200px;
+  .home & {
+    @media (min-width: 1024px) {
+      padding-bottom: 200px;
+      margin-bottom: -200px;
+    }
+    .hero-wrap {
+      padding: 460px 0 85px;
+      @media (min-width: 768px) {
+        padding: 525px 0 115px 0px;
+      }
+      @media (min-width: 1024px) {
+        padding: 323px 0 115px 110px;
+      }
+    }
   }
   .hero-wrap {
     background: linear-gradient(45deg, #3fc7b1, #36637a);
-    padding: 460px 0 85px;
+    padding: 250px 0 85px;
     position: relative;
-    @media (min-width: 768px) {
-      padding: 525px 0 115px 0px;
-    }
-    @media (min-width: 1024px) {
-      padding: 323px 0 115px 110px;
-    }
+    background-repeat: no-repeat;
+    // @media (min-width: 768px) {
+    //   padding: 525px 0 115px 0px;
+    // }
+    // @media (min-width: 1024px) {
+    //   padding: 323px 0 115px 110px;
+    // }
   }
   .hero-content {
     z-index: 3;
@@ -109,20 +121,23 @@
 
 .veterinar-page {
   .title-page {
-    font-size: 56px;
     margin-bottom: 78px;
+    @media (min-width: 768px) {
+      font-size: 56px;
+    }
     @media (min-width: 1024px) {
       font-size: 68px;
       margin-bottom: 57px;
     }
   }
   .section-hero {
-    padding-bottom: 0;
-    margin-bottom: 0;
     .hero-wrap {
-      padding: 237px 0 267px;
+      padding: 193px 0 105px;
       background-size: 100% 32%;
       background-repeat: no-repeat;
+      @media (min-width: 768px) {
+        padding: 237px 0 267px;
+      }
       @media (min-width: 1024px) {
         padding: 237px 0 200px;
         background-size: 100% 34%;
@@ -136,16 +151,20 @@
       .subtitle-page {
         font-size: 21px;
         margin-bottom: 18px;
-        @media (max-width: 767px) {
-          order: 1;
-        }
         @media (max-width: 1023px) {
           margin-bottom: 25px;
+        }
+        @media (max-width: 767px) {
+          order: 1;
+          margin-bottom: 35px;
         }
       }
       .title-page {
         @media (max-width: 767px) {
           order: 2;
+          font-size: 32px;
+          line-height: 1.4;
+          margin-bottom: 10px;
         }
       }
     }
@@ -153,15 +172,15 @@
       position: relative;
       max-width: 380px;
       order: 4;
-      margin: 0 auto;
+      margin: 0 auto 70px;
       @media (min-width: 768px) {
         max-height: 382px;
         position: absolute;
         right: 0;
         top: 57px;
+        margin: 0 auto;
       }
       @media (min-width: 1024px) {
-        // position: relative;
         max-height: 490px;
         top: 64px;
         right: 0;
@@ -175,6 +194,8 @@
         left: auto;
         top: auto;
         bottom: auto;
+        max-width: 100%;
+        max-height: 435px;
         @media (min-width: 768px) {
           max-width: 290px;
           max-height: 382px;
@@ -210,30 +231,33 @@
       order: 3;
       display: flex;
       color: #fff;
+      font-size: 16px;
+      margin-bottom: 30px;
     }
     @media (min-width: 1024px) {
       margin-bottom: 75px;
     }
   }
   .section-title {
-    color: #4b4b4b;
     font-size: 38px;
     margin-bottom: 40px;
     @media (min-width: 1024px) {
-      font-size: 30px;
       margin-bottom: 30px;
     }
     @media (max-width: 767px) {
       order: 5;
+      font-size: 27px;
+      margin-bottom: 28px;
     }
   }
   .description-txt {
     color: #4b4b4b;
     font-size: 24px;
-    line-height: 1.35;
+    line-height: 1.4;
     max-width: 525px;
     @media (max-width: 767px) {
       order: 6;
+      font-size: 20px;
     }
   }
 }

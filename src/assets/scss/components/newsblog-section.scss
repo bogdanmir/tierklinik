@@ -1,11 +1,11 @@
 .newsblog-section {
-  margin-bottom: 135px;
-  // padding: 0 250px 0 295px;
+  padding: 135px 0;
   @media (min-width: 768px) {
     margin-bottom: 150px;
   }
-  .newsblog-wrap {
+  .newsblog-item {
     display: flex;
+    align-items: center;
     margin-bottom: 82px;
     @media (max-width: 767px) {
       flex-direction: column;
@@ -28,9 +28,14 @@
   }
   .text-wrap {
     padding: 48px 20px 93px;
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 60%;
     @media (min-width: 768px) {
-      padding: 87px 0 0 84px;
+      padding: 0 50px;
+    }
+    @media (min-width: 1024px) {
+      padding: 0 0 0 84px;
     }
   }
   .section-subtitle {

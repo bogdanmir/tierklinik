@@ -1,6 +1,9 @@
 .aarau-west-section {
-  padding: 88px 0 107px;
+  padding: 107px 0 100px;
   background: linear-gradient(45deg, #3fc7b1, #36637a);
+  @media (min-width: 768px) {
+    padding: 88px 0 107px;
+  }
   @media (min-width: 1024px) {
     padding: 102px 0 118px;
   }
@@ -15,5 +18,6 @@
     font-size: 20px;
     font-family: "Replica-Light";
     margin-bottom: 0;
+    justify-content: center;
   }
 }
