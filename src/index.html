@@ -445,8 +445,10 @@
 	<section class="contact-section">
 		<a href="" id="backtotop" class="backtop-btn"><i class="fas fa-arrow-up"></i></a>
 		<div class="contact-container container mx-auto">
-			<div class="grid md:grid-cols-3 gap-4 lg:gap-10">
-				<div class="contact-img">
+			<!-- <div class="grid md:grid-cols-3 gap-4 lg:gap-10"> -->
+
+			<div class="contact-wrap">
+				<div class="contact-col contact-img">
 					<picture>
 						<source srcset="assets/images/webp/_03A1831.webp" type="image/webp">
 						<img src="assets/images/_03A1831.jpg" alt="1">
@@ -461,8 +463,16 @@
 						<p>5036 Oberentfelden</p>
 						<p>Schweiz</p>
 					</div>
-					<div class="md:mb-2 order-3 md:flex"><span class="mr-8 hidden md:block">Fon</span><a href="tel:0627378000" class="mob-btn">062 737 80 00</a></div>
-					<p class="order-7 md:order-4 mt-4 md:mt-0"><span class="mr-8">Fax</span><a href="tel:0627378001">062 737 80 01</a></p>
+
+					<div class="contacts-group phone">
+						<span class="contacts-group-title">Fon</span>
+						<a href="tel:0627378000" class="mob-btn">062 737 80 00</a>
+					</div>
+
+					<div class="contacts-group fax">
+						<span class="contacts-group-title">Fax</span>
+						<a href="tel:0627378001">062 737 80 01</a>
+					</div>
 
 					<a href="tel:0900800007" class="btn shadow-lg bg-red max-w-full my-6 order-5 emergency-btn">
 						<span class="mr-2">Notfall 0900 800 007</span>
